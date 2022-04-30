@@ -1,0 +1,69 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Laravel Microservice Test",
+        "version": "0.1"
+    },
+    "paths": {
+        "/articles": {
+            "get": {
+                "operationId": "89181b74a8aa4d580750ede6aa32f92a",
+                "responses": {
+                    "200": {
+                        "description": "Display a listing of articles."
+                    }
+                }
+            }
+        },
+        "/api/v1/articles": {
+            "post": {
+                "operationId": "0ea2309d3197efec2dbee20f8ba49ddc",
+                "responses": {
+                    "201": {
+                        "description": "Store an article."
+                    }
+                }
+            }
+        },
+        "/api/v1/articles/{article_id}": {
+            "get": {
+                "operationId": "b30bca72636af7d3916712d0f29c378c",
+                "responses": {
+                    "200": {
+                        "description": "Fetch an Article."
+                    }
+                }
+            }
+        },
+        "/api/v1/articles/{article_id}/comment": {
+            "get": {
+                "operationId": "6144e76b86467b0349ddd01400beadb3",
+                "responses": {
+                    "200": {
+                        "description": "Fetch an Article with its corresponding comments."
+                    }
+                }
+            }
+        },
+        "/api/v1/articles/{article_id}/like": {
+            "get": {
+                "operationId": "3207a0f3e43bc31ed540e40b17e36504",
+                "responses": {
+                    "200": {
+                        "description": "Like an Article."
+                    }
+                }
+            }
+        },
+        "/api/v1/articles/{article_id}/view": {
+            "get": {
+                "operationId": "ae93eb7a69eedc5bf0902e0468f51456",
+                "responses": {
+                    "200": {
+                        "description": "update article view counts."
+                    }
+                }
+            }
+        }
+    }
+}
