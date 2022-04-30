@@ -14,9 +14,10 @@ class ArticleFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->title(),
+            'title' => $this->faker->paragraph(2),
             'cover' => 'https://via.placeholder.com/728x350',
             'full_text' => $this->faker->text(),
+            'short_description' => $this->faker->text(100),
             'tags' => array([
                 'name' => $this->faker->word(),
                 'url' => $this->faker->url()

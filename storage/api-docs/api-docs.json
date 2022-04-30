@@ -5,17 +5,15 @@
         "version": "0.1"
     },
     "paths": {
-        "/articles": {
+        "/api/v1/articles": {
             "get": {
-                "operationId": "89181b74a8aa4d580750ede6aa32f92a",
+                "operationId": "2bb6d18420d6929d1d4175ace6521d21",
                 "responses": {
                     "200": {
                         "description": "Display a listing of articles."
                     }
                 }
-            }
-        },
-        "/api/v1/articles": {
+            },
             "post": {
                 "operationId": "0ea2309d3197efec2dbee20f8ba49ddc",
                 "responses": {

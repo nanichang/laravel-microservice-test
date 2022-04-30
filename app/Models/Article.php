@@ -12,6 +12,7 @@ class Article extends Model
     protected $fillable = [
         'title',
         'cover',
+        'short_description',
         'full_text',
         'tags',
         'likes_counter',

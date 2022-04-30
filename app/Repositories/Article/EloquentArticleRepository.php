@@ -10,6 +10,7 @@ class EloquentArticleRepository implements ArticleContract {
     public function create($request) {
         $article = new Article();
         $article->title = $request->title;
+        $article->short_description = $request->short_description;
         $article->full_text = $request->full_text;
         $article->tags = $request->tags;
         $article->save();

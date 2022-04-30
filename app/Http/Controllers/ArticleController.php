@@ -17,10 +17,10 @@ class ArticleController extends Controller
      * @OA\Get(
      *     path="/api/v1/articles",
      *     @OA\Response(response="200", description="Display a listing of articles.")
+     *      
      * )
      */
     public function index() {
-        // dd('index');
         $articles = $this->repo->getAll();
         
         return response()->json([

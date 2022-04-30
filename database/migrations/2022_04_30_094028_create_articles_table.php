@@ -17,6 +17,7 @@ class CreateArticlesTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('cover');
+            $table->longText('short_description');
             $table->longText('full_text');
             $table->json('tags');
             $table->integer('likes_counter')->default(0);
