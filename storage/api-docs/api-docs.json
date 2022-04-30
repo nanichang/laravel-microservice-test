@@ -13,14 +13,6 @@
                         "description": "Display a listing of articles."
                     }
                 }
-            },
-            "post": {
-                "operationId": "0ea2309d3197efec2dbee20f8ba49ddc",
-                "responses": {
-                    "201": {
-                        "description": "Store an article."
-                    }
-                }
             }
         },
         "/api/v1/articles/{article_id}": {
