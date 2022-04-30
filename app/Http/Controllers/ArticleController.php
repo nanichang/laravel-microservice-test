@@ -30,31 +30,6 @@ class ArticleController extends Controller
     }
 
     /**
-     * @OA\Post(
-     *     path="/api/v1/articles",
-     *     @OA\Response(response="201", description="Store an article.")
-     * )
-     */
-    public function store(Request $request) {
-        $validator = Validator::make($request->all(), [
-            'title' => 'required|unique:posts|max:255',
-            'body' => 'required',
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                ''
-            ]);
-        }
-
-        $article = $this->repo->create($request);
-        return response()->json([
-            'message' => 'Article saved successfully',
-            'data' => $article
-        ], 201);
-    }
-
-    /**
      * @OA\Get(
      *     path="/api/v1/articles/{article_id}",
      *     @OA\Response(response="200", description="Fetch an Article.")
